@@ -7,12 +7,11 @@ public class PlayerMove : MonoBehaviour
 
     public GameObject bulletPrefab;
 
-    private Rigidbody2D rb;
+    [SerializeField] Rigidbody2D rb;
 
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
         
     }
